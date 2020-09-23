@@ -1,0 +1,407 @@
+@font-face{
+    font-family: 'Roboto';
+	src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face{
+    font-family: 'Roboto-light';
+	src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+html, body{
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	font-family: 'Roboto';
+	font-size: 12px;
+}
+
+.nav-logo{
+	height: 3rem;
+}
+
+.navbar{
+	background-color: transparent;
+}
+
+#Title{
+	background-image: url("../img/homepage/title_bg_01.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding-bottom: 31.2vw;
+}
+
+/* #Title .title-bg{
+	width: 100%;
+	position: fixed;
+} */
+
+#Title > .container{
+	padding-top: 7%;
+	padding-left: 7%;
+	float: left;
+}
+
+#Title .dl-btns{
+	display: inline;
+}
+
+#Title .dl-btns .dl-btn{
+	width: 9em;
+	margin-right: 1.5rem;
+	background-color: black;
+	color: whitesmoke;
+	opacity:60%;
+}
+
+#Title .dl-btns .lg-text{
+	float: left;
+	font-family: "Roboto-light";
+	padding-right: 1rem;
+}
+
+#Title .dl-btns img{
+	margin-top: 0.3em;
+	float: right;
+	height: 1.3em;
+}
+
+#Title .lg-title{
+	font-weight: bold;
+	color: white;
+}
+
+#Title .md-text{
+	padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
+	opacity: 70%;
+	color: white;
+}
+
+#Information{
+	background-image: url("../img/homepage/bg1.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	width: 100%;
+	height: 116vw;
+	padding-top: 8%;
+}
+
+#Information > .about-mimekom{
+	background-color: #333333;
+	float: center;
+	width: 88%;
+	margin-left: 6%;
+	margin-right: 6%;
+	height: 50vw;
+}
+
+#Information .about-mimekom .content{
+	display: inline-block;
+}
+
+#Information .about-image{
+	background-image: url("../img/homepage/information_img1.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 6vw;
+	left: 14vw;
+	width: 22vw;
+	height: 46vw;
+}
+
+#Information .about-text{
+	position: absolute;
+	top: 15vw;
+	left: 40vw;
+	width: 40vw;
+	height: 46vw;
+	color: white;
+	display: block;
+	text-align: left;
+}
+
+#Information .about-text .sm-title{
+	color: #c9ac82;
+}
+
+#Information .line{
+	/* position: absolute;
+	left: 0px; */
+	/* float: left; */
+	width: 10vw;
+	height: 1px;
+	border-top: solid white 1px;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+}
+
+#Information > .certificate{
+	float: center;
+	width: 88%;
+	margin-left: 6%;
+	margin-right: 6%;
+	height: 60vw;
+}
+
+#Information .certificate-img{
+	background-image: url("../img/homepage/certificate.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 75vw;
+	left: 5vw;
+	width: 36vw;
+	height: 27vw;
+	z-index: 10;
+}
+
+#Information .phone{
+	background-image: url("../img/homepage/phone1.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 68vw;
+	left: 20vw;
+	width: 72.5vw;
+	height: 40vw;
+	z-index: 5;
+}
+
+#Information .certificate-text{
+	/* background-color: violet; */
+	position: absolute;
+	top: 12vw;
+	left: 25vw;
+	width: 42vw;
+	height: 20vw;
+	display: block;
+	color: white;
+	z-index: 10;
+}
+
+#Information .phone .lg-text{
+	margin-top: 2vw;
+}
+
+/* #Feature{
+	position: relative;
+} */
+
+#Feature .block1{
+	background-color: #253361;
+	width: 100%;
+	height: 50vw;
+}
+
+#Feature .block1 .phone1{
+	background-image: url("../img/homepage/phone2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-top: 7vw;
+	margin-left: 5vw;
+	width: 21vw;
+	height: 36vw;
+	display: inline-block;
+}
+
+#Feature .block1 .phone2{
+	background-image: url("../img/homepage/phone2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-top: 7vw;
+	width: 21vw;
+	height: 36vw;
+	display: inline-block;
+}
+
+#Feature .block1 .text{
+	position: absolute;
+	top: 158vw;
+	left: 50vw;
+	width: 38vw;
+	height: 40vw;
+	color: white;
+}
+
+#Feature .block1 .icon{
+	background-image: url("../img/homepage/private_chat_icon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-bottom: 2vw;
+	width: 8vw;
+	height: 8vw;
+	display: inline-block;
+}
+
+#Feature .block2{
+	background-color: #021142;
+	width: 100%;
+	height: 50vw;
+}
+
+#Feature .block2 .phone1{
+	background-image: url("../img/homepage/phone2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-top: 7vw;
+	margin-left: 67vw;
+	width: 21vw;
+	height: 36vw;
+	display: inline-block;
+}
+
+#Feature .block2 .text{
+	position: absolute;
+	top: 208vw;
+	left: 10vw;
+	width: 38vw;
+	height: 40vw;
+	color: white;
+}
+
+#Feature .block2 .icon{
+	background-image: url("../img/homepage/protect_icon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-bottom: 2vw;
+	width: 8vw;
+	height: 8vw;
+	display: inline-block;
+}
+
+#Feature .block3{
+	background-color: #253361;
+	width: 100%;
+	height: 50vw;
+}
+
+#Feature .block3 .phone1{
+	background-image: url("../img/homepage/phone2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-top: 7vw;
+	margin-left: 15vw;
+	width: 21vw;
+	height: 36vw;
+	display: inline-block;
+}
+
+#Feature .block3 .text{
+	position: absolute;
+	top: 258vw;
+	left: 50vw;
+	width: 38vw;
+	height: 40vw;
+	color: white;
+}
+
+#Feature .block3 .icon{
+	background-image: url("../img/homepage/screenshot_icon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-bottom: 2vw;
+	width: 8vw;
+	height: 8vw;
+	display: inline-block;
+}
+
+#Feature .block4{
+	background-color: #021142;
+	width: 100%;
+	height: 50vw;
+}
+
+#Feature .block4 .phone1{
+	background-image: url("../img/homepage/phone2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-top: 7vw;
+	margin-left: 67vw;
+	width: 21vw;
+	height: 36vw;
+	display: inline-block;
+}
+
+#Feature .block4 .text{
+	position: absolute;
+	top: 308vw;
+	left: 10vw;
+	width: 38vw;
+	height: 40vw;
+	color: white;
+}
+
+#Feature .block4 .icon{
+	background-image: url("../img/homepage/speed_text_icon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-bottom: 2vw;
+	width: 8vw;
+	height: 8vw;
+	display: inline-block;
+}
+
+#Feature .block5{
+	background-color: #253361;
+	width: 100%;
+	height: 50vw;
+}
+
+#Feature .block5 .phone1{
+	background-image: url("../img/homepage/phone2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-top: 7vw;
+	margin-left: 15vw;
+	width: 21vw;
+	height: 36vw;
+	display: inline-block;
+}
+
+#Feature .block5 .text{
+	position: absolute;
+	top: 358vw;
+	left: 50vw;
+	width: 38vw;
+	height: 35vw;
+	color: white;
+}
+
+#Feature .block5 .icon{
+	background-image: url("../img/homepage/group_icon.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-bottom: 2vw;
+	width: 8vw;
+	height: 8vw;
+	display: inline-block;
+}
+/* #footer{
+	z-index: 1;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 9vh;
+	background-color: #292827;
+	border: 0px;
+	margin: 0px;
+	padding: 0px;
+	letter-spacing: 3px;
+	color: #e2d4ce;
+	font-size:16px;
+}
+#footer > span{
+	border: 0px;
+	padding: 0px;
+	position: relative;
+	width: 32.5%;
+	height: 9vh;
+	line-height: 9vh;
+	margin:0 auto;
+	display: inline-block;
+	text-align: center;
+} */
