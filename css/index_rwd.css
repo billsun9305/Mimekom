@@ -1,0 +1,308 @@
+/* @media all and (max-width:1500px){
+}
+
+@media all and (max-width:1300px){
+} */
+
+@media all and (max-width:900px){
+    #Title .dl-btns{
+        position: absolute;
+        top: 26vw;
+        left: 7vw;
+        display: inline;
+    }
+
+    #Information{
+        height: 116vw;
+    }
+    #Information > .about-mimekom{
+        height: 55vw;
+    }
+    #Information .certificate-text{
+        position: absolute;
+        top: 8vw;
+    }
+    
+    #Feature .block1 .block .text{
+        top: -35vw;
+    }
+    #Feature .block2 .block .text{
+        top: 7vw;
+    }
+    #Feature .block3 .block .text{
+        top: -35vw;
+    }
+    #Feature .block4 .block .text{
+        top: 7vw;
+    }
+    #Feature .block5 .block .text{
+        top: -35vw;
+    }
+
+    #Footer {
+        height: 22vw;
+    }
+}
+
+@media all and (max-width:767px){
+    /* for mobile */
+    .lg-text{
+        line-height: 2.5rem;
+    }
+    #Title{
+        text-align: center;
+    }
+    #Title .carousel-indicators{
+        margin-bottom: 0.5rem;
+    }
+    #Title .carousel-item{
+        padding-bottom: 15vw;
+    }
+    #Title .container{
+        padding-left: 15px;
+        text-align: center;
+        float: none;
+    }
+    #Title .dl-btns{
+        position: relative;
+        left: 0;
+        top: -8rem;
+    }
+    #Title .dl-btns .dl-btn{
+        width: 12em;
+    }
+
+    #Information{
+        padding-top: 3%;
+        margin-top: -4.5vw;
+        height: 196vw;
+    }
+    #Information .content{
+        display: none;
+    }
+    #Information .content-mobile{
+        display: block !important;
+    }
+    #Information > .about-mimekom{
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+        height: 70vw;
+    }
+    #Information .about-image{
+        display: none;
+    }
+    #Information .about-text{
+        position: relative;
+        top: 5vw;
+        left: 12vw;
+        width: 70vw;
+        height: 46vw;
+    }
+    #Information .line{
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+    }
+    #Information .about-text .sm-title{
+        line-height: 3rem;
+        color: white;
+    }
+    #Information > .certificate{
+        text-align: center;
+    }
+    #Information .certificate-img{
+        position: relative;
+        background-size: cover;
+        top: 2vw;
+        width: 80vw;
+        left: 3vw;
+        height: 60vw;
+    }
+    #Information .phone{
+        background-image: none;
+        position: relative;
+        top: 0vw;
+        left: 0vw;
+    }
+    #Information .certificate-text{
+        display: none;
+    }
+    #Information .certificate-text-mobile{
+        display: block;
+        position: relative;
+        top: 5vw;
+        left: 7vw;
+        color: black;
+        z-index: 10;
+    }
+    #Information .certificate-text-mobile .md-title{
+        line-height: 3.7rem;
+    }
+    
+    #Feature .block{
+        display: none;
+    }
+    #Feature .block-mobile{
+        display: block;
+    }
+    #Feature .light-block{
+        height: 140vw;
+    }
+    #Feature .dark-block{
+        height: 140vw;
+    }
+    #Feature .md-title{
+        margin-top: 3vw;
+        font-family: 'Roboto-light';
+    }
+    #Feature .icon{
+        margin-top: 5vw;
+        margin-bottom: 2vw;
+        width: 12vw;
+        height: 12vw;
+        display: inline-block;
+    }
+    #Feature .block-mobile .text{
+        position: relative;
+        top: 5vw;
+        left: 12vw;
+        width: 76vw;
+        height: 40vw;
+        color: white;
+    }
+    #Feature .block-mobile .phone1{
+        background-image: url("../img/homepage/phone2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 30vw;
+        margin-left: 10vw;
+        width: 40vw;
+        height: 65vw;
+        display: inline-block;
+    }
+    #Feature .block-mobile .phone2{
+        background-image: url("../img/homepage/phone2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 40vw;
+        height: 65vw;
+        display: inline-block;
+    }
+    #Feature .block-mobile .phone3{
+        background-image: url("../img/homepage/phone2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 30vw;
+        margin-left: 50vw;
+        width: 40vw;
+        height: 65vw;
+        display: inline-block;
+    }
+
+    #Contact-us .block-mobile{
+        background-image: url("../img/homepage/contact_us_bg.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 80vw;
+        padding-top: 10vw;
+        text-align: center;
+        display: block;
+    }
+    #Contact-us .block{
+        display: none;
+    }
+    #Contact-us .sm-title{
+        line-height: 3rem;
+        padding: 1vw 8vw;
+    }
+    #Contact-us .contact-btns{
+        text-align: center;
+    }
+    #Contact-us .btn{
+        width: 60vw;
+        height: 10vw;
+        border-radius: 3.5vw;
+        font-family: 'Roboto-light';
+        color: whitesmoke;
+        display: block;
+    }
+    #Contact-us .btn1{
+        margin-bottom: 5vw;
+        background-color: #021142;
+        margin-right: 0vw;
+    }
+    #Contact-us .btn2{
+        background-color: #324583;
+    }
+
+    #Footer{
+        height: 40vw;
+        padding-top: 10vw;
+    }
+    #Footer .mobile{
+        margin-top: 5vw;
+        display: block;
+    }
+    #Footer .md-text{
+        display: none;
+    }
+    #Footer .contact-btns{
+        display: none;
+    }
+    #Footer .right-stuff{
+        position: relative;
+        top: 0vw;
+        margin-right: 0vw;
+        text-align: center;
+        opacity: 80%;
+    }
+    #Footer .icon1{
+        width: 8vw;
+        height: 8vw;
+        margin-right: 5vw;
+        display: inline-block;
+    }
+    #Footer .icon2{
+        width: 8vw;
+        height: 8vw;
+        display: inline-block;
+    }
+}
+@media all and (max-width:539px){
+    #Information{
+        height: 226vw;
+    }
+    #Information > .about-mimekom{
+        height: 90vw;
+    }
+    #Information .about-text .sm-title{
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        color: white;
+    }
+    #Feature .light-block{
+        height: 160vw;
+    }
+    #Feature .dark-block{
+        height: 160vw;
+    }
+    #Feature .block-mobile .phone1{
+        margin-top: 40vw;
+    }
+    #Feature .block-mobile .phone2{
+        margin-top: 40vw;
+    }
+    #Feature .block-mobile .phone3{
+        margin-top: 40vw;
+    }
+    #Contact-us .block-mobile{
+        height: 100vw;
+    }
+    #Contact-us .sm-title{
+        font-size: 1.8rem;
+    }
+  }
+/* @media all and (min-width:1501px){
+} */

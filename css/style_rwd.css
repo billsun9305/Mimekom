@@ -130,6 +130,45 @@
     }
 }
 
+@media all and (max-width:539px){
+  html{
+      font-size: 8px;
+  }
+}
+
+@media all and (max-width:359px){
+  html{
+      font-size: 7px;
+  }
+  .xl-title{
+		font-size: 3.3rem;
+    }
+    .lg-title{
+		font-size: 2.8rem;
+    }
+    .md-title{
+		font-size: 2.1rem;
+    }
+    .sm-title{
+		font-size: 1.3rem;
+    }
+    .xl-text{
+		font-size: 1.2rem;
+    }
+    .lg-text{
+		font-size: 1.1rem;
+    }
+    .md-text{
+        font-size: 1rem;
+    }
+    .sm-text{
+        font-size: 0.8rem;
+    }
+    .xs-text{
+        font-size: 0.7rem;
+    }
+}
+
 @media all and (min-width:1501px){
     html{
         font-size: 18px;

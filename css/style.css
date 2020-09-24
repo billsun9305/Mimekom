@@ -16,10 +16,12 @@ html, body{
 	font-size: 12px;
 }
 
+.lg-text{
+	line-height: 2.2rem;
+}
 .nav-logo{
 	height: 3rem;
 }
-
 .navbar{
 	background-color: transparent;
 }
@@ -30,7 +32,6 @@ html, body{
 	width: 100%;
 	padding-bottom: 10vw;
 }
-
 #Title .bg1{
 	background-image: url("../img/homepage/title_bg_01.png");
 }
@@ -50,46 +51,41 @@ html, body{
 	width: 100%;
 	position: fixed;
 } */
-
 #Title .container{
 	padding-top: 7%;
 	padding-left: 7vw;
 	float: left;
+	text-align: left;
 }
-
 #Title .dl-btns{
 	position: absolute;
 	top: 22vw;
 	left: 7vw;
 	display: inline;
 }
-
 #Title .dl-btns .dl-btn{
 	width: 9em;
-	margin-right: 1.5rem;
 	background-color: black;
 	color: whitesmoke;
+	padding: 0rem 0.75rem;
 	opacity:60%;
 }
-
 #Title .dl-btns .lg-text{
 	float: left;
 	font-family: "Roboto-light";
 	padding-right: 1rem;
 }
-
 #Title .dl-btns img{
-	margin-top: 0.3em;
+	position: relative;
+	top: 0.7em;
 	float: right;
 	height: 1.3em;
 }
-
 #Title .lg-title{
 	font-weight: bold;
 	color: white;
 }
-
-#Title .md-text{
+#Title .lg-text{
 	padding-top: 0.4rem;
 	padding-bottom: 0.4rem;
 	opacity: 70%;
@@ -105,7 +101,6 @@ html, body{
 	height: 116vw;
 	padding-top: 8%;
 }
-
 #Information > .about-mimekom{
 	background-color: #333333;
 	float: center;
@@ -114,11 +109,9 @@ html, body{
 	margin-right: 6%;
 	height: 50vw;
 }
-
-#Information .about-mimekom .content{
-	display: inline-block;
+#Information .about-mimekom .content-mobile{
+	display: none;
 }
-
 #Information .about-image{
 	background-image: url("../img/homepage/information_img1.png");
 	background-size: cover;
@@ -129,7 +122,6 @@ html, body{
 	width: 22vw;
 	height: 46vw;
 }
-
 #Information .about-text{
 	position: absolute;
 	top: 15vw;
@@ -140,11 +132,9 @@ html, body{
 	display: block;
 	text-align: left;
 }
-
 #Information .about-text .sm-title{
 	color: #c9ac82;
 }
-
 #Information .line{
 	/* position: absolute;
 	left: 0px; */
@@ -163,7 +153,6 @@ html, body{
 	margin-right: 6%;
 	height: 60vw;
 }
-
 #Information .certificate-img{
 	background-image: url("../img/homepage/certificate.png");
 	background-size: cover;
@@ -175,7 +164,6 @@ html, body{
 	height: 27vw;
 	z-index: 10;
 }
-
 #Information .phone{
 	background-image: url("../img/homepage/phone1.jpeg");
 	background-size: cover;
@@ -187,7 +175,9 @@ html, body{
 	height: 40vw;
 	z-index: 5;
 }
-
+#Information .certificate-text-mobile{
+	display: none;
+}
 #Information .certificate-text{
 	/* background-color: violet; */
 	position: absolute;
@@ -199,22 +189,24 @@ html, body{
 	color: white;
 	z-index: 10;
 }
-
 #Information .phone .lg-text{
 	margin-top: 2vw;
 }
 
-/* #Feature{
-	position: relative;
-} */
-
-#Feature .block1{
+#Feature .block-mobile{
+	display: none;
+}
+#Feature .light-block{
 	background-color: #253361;
 	width: 100%;
 	height: 50vw;
 }
-
-#Feature .block1 .phone1{
+#Feature .dark-block{
+	background-color: #021142;
+	width: 100%;
+	height: 50vw;
+}
+#Feature .block1 .block .phone1{
 	background-image: url("../img/homepage/phone2.png");
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -224,8 +216,7 @@ html, body{
 	height: 36vw;
 	display: inline-block;
 }
-
-#Feature .block1 .phone2{
+#Feature .block1 .block .phone2{
 	background-image: url("../img/homepage/phone2.png");
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -234,8 +225,7 @@ html, body{
 	height: 36vw;
 	display: inline-block;
 }
-
-#Feature .block1 .text{
+#Feature .block1 .block .text{
 	position: relative;
 	top: -32vw;
 	left: 50vw;
@@ -243,7 +233,6 @@ html, body{
 	height: 40vw;
 	color: white;
 }
-
 #Feature .block1 .icon{
 	background-image: url("../img/homepage/private_chat_icon.png");
 	background-size: contain;
@@ -253,14 +242,7 @@ html, body{
 	height: 8vw;
 	display: inline-block;
 }
-
-#Feature .block2{
-	background-color: #021142;
-	width: 100%;
-	height: 50vw;
-}
-
-#Feature .block2 .phone1{
+#Feature .block2 .block .phone1{
 	background-image: url("../img/homepage/phone2.png");
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -270,8 +252,7 @@ html, body{
 	width: 21vw;
 	height: 36vw;
 }
-
-#Feature .block2 .text{
+#Feature .block2 .block .text{
 	position: relative;
 	top: 10vw;
 	left: 10vw;
@@ -279,7 +260,6 @@ html, body{
 	height: 40vw;
 	color: white;
 }
-
 #Feature .block2 .icon{
 	background-image: url("../img/homepage/protect_icon.png");
 	background-size: contain;
@@ -289,14 +269,7 @@ html, body{
 	height: 8vw;
 	display: inline-block;
 }
-
-#Feature .block3{
-	background-color: #253361;
-	width: 100%;
-	height: 50vw;
-}
-
-#Feature .block3 .phone1{
+#Feature .block3 .block .phone1{
 	background-image: url("../img/homepage/phone2.png");
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -306,8 +279,7 @@ html, body{
 	height: 36vw;
 	display: inline-block;
 }
-
-#Feature .block3 .text{
+#Feature .block3 .block .text{
 	position: relative;
 	top: -32vw;
 	left: 50vw;
@@ -315,7 +287,6 @@ html, body{
 	height: 40vw;
 	color: white;
 }
-
 #Feature .block3 .icon{
 	background-image: url("../img/homepage/screenshot_icon.png");
 	background-size: contain;
@@ -325,14 +296,7 @@ html, body{
 	height: 8vw;
 	display: inline-block;
 }
-
-#Feature .block4{
-	background-color: #021142;
-	width: 100%;
-	height: 50vw;
-}
-
-#Feature .block4 .phone1{
+#Feature .block4 .block .phone1{
 	background-image: url("../img/homepage/phone2.png");
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -342,8 +306,7 @@ html, body{
 	width: 21vw;
 	height: 36vw;
 }
-
-#Feature .block4 .text{
+#Feature .block4 .block .text{
 	position: relative;
 	top: 10vw;
 	left: 10vw;
@@ -351,7 +314,6 @@ html, body{
 	height: 40vw;
 	color: white;
 }
-
 #Feature .block4 .icon{
 	background-image: url("../img/homepage/speed_text_icon.png");
 	background-size: contain;
@@ -361,14 +323,7 @@ html, body{
 	height: 8vw;
 	display: inline-block;
 }
-
-#Feature .block5{
-	background-color: #253361;
-	width: 100%;
-	height: 50vw;
-}
-
-#Feature .block5 .phone1{
+#Feature .block5 .block .phone1{
 	background-image: url("../img/homepage/phone2.png");
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -378,8 +333,7 @@ html, body{
 	height: 36vw;
 	display: inline-block;
 }
-
-#Feature .block5 .text{
+#Feature .block5 .block .text{
 	position: relative;
 	top: -32vw;
 	left: 50vw;
@@ -387,7 +341,6 @@ html, body{
 	height: 35vw;
 	color: white;
 }
-
 #Feature .block5 .icon{
 	background-image: url("../img/homepage/group_icon.png");
 	background-size: contain;
@@ -407,16 +360,16 @@ html, body{
 	padding-top: 5vw;
 	text-align: center;
 }
-
+#Contact-us .block-mobile{
+	display: none;
+}
 #Contact-us .lg-title{
 	padding-bottom: 1vw;
 }
-
 #Contact-us .contact-btns{
 	text-align: center;
 	display: inline-block;
 }
-
 #Contact-us .btn{
 	margin-top: 2vw;
 	width: 20vw;
@@ -424,12 +377,10 @@ html, body{
 	border-radius: 1vw;
 	color: whitesmoke;
 }
-
 #Contact-us .btn1{
 	background-color: #021142;
 	margin-right: 5vw;
 }
-
 #Contact-us .btn2{
 	background-color: #324583;
 }
@@ -442,26 +393,26 @@ html, body{
 	padding-top: 4vw;
 	color: white;
 }
-
+#Footer .mobile{
+	display: none;
+}
 #Footer .contact-btns{
 	margin-top: 4vw;
 	margin-left: 2vw;
 	opacity: 60%;
 }
-
 #Footer .footer-btn{
 	margin-left: 3vw;
 	text-decoration: none;
 	color: white;
 }
-
 #Footer .right-stuff{
 	position: relative;
 	top: -4vw;
 	margin-right: 5vw;
+	text-align: right;
 	opacity: 60%;
 }
-
 #Footer .icon1{
 	background-image: url("../img/social/linkedin_icon.png");
 	background-size: contain;
@@ -471,7 +422,6 @@ html, body{
 	margin-right: 2vw;
 	display: inline-block;
 }
-
 #Footer .icon2{
 	background-image: url("../img/social/twitter_icon.png");
 	background-size: contain;
@@ -480,7 +430,6 @@ html, body{
 	height: 4vw;
 	display: inline-block;
 }
-
 #Footer .md-text{
 	margin-top: 1vw;
 }
