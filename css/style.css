@@ -24,40 +24,27 @@ html, body{
 	background-color: transparent;
 }
 
-#Title .bg1{
-	background-image: url("../img/homepage/title_bg_01.png");
+#Title .carousel-item{
 	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
 	padding-bottom: 10vw;
+}
+
+#Title .bg1{
+	background-image: url("../img/homepage/title_bg_01.png");
 }
 #Title .bg2{
 	background-image: url("../img/homepage/title_bg_02.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: 100%;
-	padding-bottom: 10vw;
 }
 #Title .bg3{
 	background-image: url("../img/homepage/title_bg_03.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: 100%;
-	padding-bottom: 10vw;
 }
 #Title .bg4{
 	background-image: url("../img/homepage/title_bg_04.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: 100%;
-	padding-bottom: 10vw;
 }
 #Title .bg5{
 	background-image: url("../img/homepage/title_bg_05.png");
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: 100%;
-	padding-bottom: 10vw;
 }
 /* #Title .title-bg{
 	width: 100%;
