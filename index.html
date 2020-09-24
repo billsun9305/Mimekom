@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/style_rwd.css">
 	<!-- <link rel="stylesheet" type="text/css" href="css/home.css"> -->
@@ -146,41 +147,41 @@
 	<!-- Feature -->
 	<div id="Feature">
 		<div class="block1">
-			<div class="phone1"></div>
-			<div class="phone2"></div>
-			<div class="text">
+			<div class="phone1" data-aos="fade-right"></div>
+			<div class="phone2" data-aos="fade-right"></div>
+			<div class="text" data-aos="fade-up">
 				<div class="icon"></div>
 				<p class="lg-title">私密聊天室</p>
 				<p class="lg-text">私密聊天室為一個單獨的聊天室功能，退出該聊天室後聊天訊息將被銷毀，完全保護用戶對話內容。在此聊天室中，禁止截圖，為用戶提供最隱密的對話聊天室。</p>
 			</div>
 		</div>
 		<div class="block2">
-			<div class="text">
+			<div class="text" data-aos="fade-up">
 				<div class="icon"></div>
 				<p class="lg-title">密文保護</p>
 				<p class="lg-text">開啓密文保護後，對話內容將形成亂碼，絕對性地保護用戶聊天紀錄，可避免他人窺探訊息內容。若要恢復成明文模式，則需要登入密碼進行身分驗證，才能關閉該保護機制。</p>
 			</div>
-			<div class="phone1"></div>
+			<div class="phone1" data-aos="fade-left"></div>
 		</div>
 		<div class="block3">
-			<div class="phone1"></div>
-			<div class="text">
+			<div class="phone1" data-aos="fade-right"></div>
+			<div class="text" data-aos="fade-up">
 				<div class="icon"></div>
 				<p class="lg-title">螢幕防截圖</p>
 				<p class="lg-text">開於帳戶設定中開啟防截圖功能，即無須擔心機密對話因螢幕截圖而洩漏。若要關閉這項保護功能，則需透過身分驗證才能關閉，讓用戶能隨時隨地安心聊天。</p>
 			</div>
 		</div>
 		<div class="block4">
-			<div class="text">
+			<div class="text" data-aos="fade-up">
 				<div class="icon"></div>
 				<p class="lg-title">閃訊</p>
 				<p class="lg-text">保障用戶的通訊安全，用戶在傳出訊息後，收件方在已讀訊息後會自動銷毀，避免商業機密訊息被洩漏，讓通訊安全做到滴水不漏的保障，同時可以客製化自動銷毀的秒數，讓您擁有最舒適的用戶體驗。</p>
 			</div>
-			<div class="phone1"></div>
+			<div class="phone1" data-aos="fade-left"></div>
 		</div>
 		<div class="block5">
-			<div class="phone1"></div>
-			<div class="text">
+			<div class="phone1" data-aos="fade-right"></div>
+			<div class="text" data-aos="fade-up">
 				<div class="icon"></div>
 				<p class="lg-title">企業群組通訊錄</p>
 				<p class="lg-text">公司成員清單一目了然，也可以一鍵匯入所有的成員名單，讓你不再低效率的辦公，立即上手工作環境。新成員也能馬上熟悉公司內部成員，讓你以一匹黑馬的資質，挑戰全新的任務。</p>
@@ -224,6 +225,12 @@
 			</p>
 		</div>
 	</div>
+	<!-- AOS-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<!-- other script -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 	
