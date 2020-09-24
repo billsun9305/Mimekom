@@ -24,26 +24,56 @@ html, body{
 	background-color: transparent;
 }
 
-#Title{
+#Title .bg1{
 	background-image: url("../img/homepage/title_bg_01.png");
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	width: 100%;
-	padding-bottom: 31.2vw;
+	padding-bottom: 10vw;
 }
-
+#Title .bg2{
+	background-image: url("../img/homepage/title_bg_02.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding-bottom: 10vw;
+}
+#Title .bg3{
+	background-image: url("../img/homepage/title_bg_03.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding-bottom: 10vw;
+}
+#Title .bg4{
+	background-image: url("../img/homepage/title_bg_04.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding-bottom: 10vw;
+}
+#Title .bg5{
+	background-image: url("../img/homepage/title_bg_05.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	padding-bottom: 10vw;
+}
 /* #Title .title-bg{
 	width: 100%;
 	position: fixed;
 } */
 
-#Title > .container{
+#Title .container{
 	padding-top: 7%;
-	padding-left: 7%;
+	padding-left: 7vw;
 	float: left;
 }
 
 #Title .dl-btns{
+	position: absolute;
+	top: 22vw;
+	left: 7vw;
 	display: inline;
 }
 
@@ -219,8 +249,8 @@ html, body{
 }
 
 #Feature .block1 .text{
-	position: absolute;
-	top: 158vw;
+	position: relative;
+	top: -32vw;
 	left: 50vw;
 	width: 38vw;
 	height: 40vw;
@@ -247,16 +277,16 @@ html, body{
 	background-image: url("../img/homepage/phone2.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-top: 7vw;
-	margin-left: 67vw;
+	position: relative;
+	top: -32vw;
+	left: 70vw;
 	width: 21vw;
 	height: 36vw;
-	display: inline-block;
 }
 
 #Feature .block2 .text{
-	position: absolute;
-	top: 208vw;
+	position: relative;
+	top: 10vw;
 	left: 10vw;
 	width: 38vw;
 	height: 40vw;
@@ -291,8 +321,8 @@ html, body{
 }
 
 #Feature .block3 .text{
-	position: absolute;
-	top: 258vw;
+	position: relative;
+	top: -32vw;
 	left: 50vw;
 	width: 38vw;
 	height: 40vw;
@@ -319,16 +349,16 @@ html, body{
 	background-image: url("../img/homepage/phone2.png");
 	background-size: contain;
 	background-repeat: no-repeat;
-	margin-top: 7vw;
-	margin-left: 67vw;
+	position: relative;
+	top: -32vw;
+	left: 70vw;
 	width: 21vw;
 	height: 36vw;
-	display: inline-block;
 }
 
 #Feature .block4 .text{
-	position: absolute;
-	top: 308vw;
+	position: relative;
+	top: 10vw;
 	left: 10vw;
 	width: 38vw;
 	height: 40vw;
@@ -363,8 +393,8 @@ html, body{
 }
 
 #Feature .block5 .text{
-	position: absolute;
-	top: 358vw;
+	position: relative;
+	top: -32vw;
 	left: 50vw;
 	width: 38vw;
 	height: 35vw;
