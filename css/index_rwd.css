@@ -46,35 +46,70 @@
 
 @media all and (max-width:767px){
     /* for mobile */
+    .nav-logo{
+        height: 5rem;
+    }
     .lg-text{
         line-height: 2.5rem;
     }
+    #mainNav{
+        height: 13vw;
+        background-color:#022142;
+    }
+    #mainNav .navbar-nav{
+        top: 13vw;
+    }
+    #mainNav .nav-item .md-text{
+        font-size: 2.3rem;
+        line-height: 3.8rem;
+    }
+    #mainNav .nav-link-btn {
+        color: #022142 !important;
+        background-color: white;
+    }
     #Title{
+        height: 63vw;
         text-align: center;
     }
     #Title .carousel-indicators{
-        margin-bottom: 0.5rem;
+        display: none;
     }
     #Title .carousel-item{
-        padding-bottom: 15vw;
+        /* position: absolute; */
+        margin-top: 13vw;
+        height: 50vw;
     }
     #Title .container{
         padding-left: 15px;
         text-align: center;
         float: none;
     }
+    #Title .title-text .lg-text{
+        margin-left: 15vw;
+        margin-right: 15vw;
+    }
     #Title .dl-btns{
         position: relative;
         left: 0;
-        top: -8rem;
+        top: -15vw;
     }
     #Title .dl-btns .dl-btn{
-        width: 12em;
+        width: 15em;
+        padding: 0.5rem 1.25rem;
+    }
+    #Title .dl-btns .lg-text{
+        font-size: 2.2rem;
+        padding-right: 0rem;
+    }
+    #Title .dl-btns img{
+        position: relative;
+        float: right;
+        height: 2rem;
     }
 
     #Information{
         padding-top: 3%;
-        margin-top: -4.5vw;
+        margin-top: 0vw;
         height: 196vw;
     }
     #Information .content{
@@ -271,6 +306,18 @@
     }
 }
 @media all and (max-width:539px){
+    #mainNav{
+        height: 18vw;
+    }
+    #mainNav .navbar-nav{
+        top: 18vw;
+    }
+    #Title {
+        height: 68vw;
+    }
+    #Title .carousel-item{
+        margin-top: 18vw;
+    }
     #Information{
         height: 226vw;
     }

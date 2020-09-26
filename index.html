@@ -2,10 +2,13 @@
 <html>
 <head>
 	<title>homepage</title>
+	<base href="/">
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<link rel="stylesheet" href="css/hamburgers.css">
+	<link rel="stylesheet" href="css/scrolling-nav.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/style_rwd.css">
 	<link rel="stylesheet" type="text/css" href="css/index_rwd.css">
@@ -13,37 +16,38 @@
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navtop">
-        <a class="navbar-brand" href="#"><img class="nav-logo" src="img/logo.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link md-text" href="home.html">關於我們<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link md-text" href="#">特色功能</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link md-text" href="#">最新消息</a>
-				</li>
-				<li class="nav-item">
-                    <a class="nav-link md-text" href="#">聯絡我們</a>
-				</li>
-				<li class="nav-item">
-                    <a class="nav-link md-text" href="#">常見問題</a>
-				</li>
-				<li class="nav-item active">
-                    <a class="nav-link md-text" href="#">免費體驗</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li> -->
-            </ul>
-        </div>
+	<!-- navbar -->
+	<nav id="mainNav" class="navbar navbar-expand-md fixed-top navtop">
+		<div class="container">
+			<a class="navbar-brand js-scroll-trigger" href="#"><img class="nav-logo" src="img/logo.png"></a>
+			<button class="navbar-toggler hamburger hamburger--collapse" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" id="hamburger_icon">
+				<span class="hamburger-box navbar-toggler-icon">
+					<span class="hamburger-inner"></span>
+				</span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto trans" id="nav-dropdown">
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger md-text" href="#">關於我們</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger md-text"  href="#">特色功能</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger md-text" href="#">最新消息</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger md-text" href="#">聯絡我們</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger md-text" href="#">常見問題</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link nav-link-btn js-scroll-trigger md-text" href="#" target="_blank">免費體驗</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</nav>
 	<!-- Title -->
 	<div id="Title">
@@ -161,94 +165,94 @@
 	<div id="Feature">
 		<div class="block1 light-block">
 			<div class="block">
-				<div class="phone1" data-aos="fade-right"></div>
-				<div class="phone2" data-aos="fade-right"></div>
-				<div class="text" data-aos="fade-up">
+				<div class="phone1" data-aos="fade-right" data-aos-once="true"></div>
+				<div class="phone2" data-aos="fade-right" data-aos-once="true"></div>
+				<div class="text" data-aos="fade-up" data-aos-once="true">
 					<div class="icon"></div>
 					<p class="lg-title">私密聊天室</p>
 					<p class="lg-text">私密聊天室為一個單獨的聊天室功能，退出該聊天室後聊天訊息將被銷毀，完全保護用戶對話內容。在此聊天室中，禁止截圖，為用戶提供最隱密的對話聊天室。</p>
 				</div>
 			</div>
 			<div class="block-mobile">
-				<div class="text" data-aos="fade-up">
+				<div class="text">
 					<div class="icon"></div>
 					<p class="xl-title">私密聊天室</p>
 					<p class="md-title">私密聊天室為一個單獨的聊天室功能，退出該聊天室後聊天訊息將被銷毀，完全保護用戶對話內容。在此聊天室中，禁止截圖，為用戶提供最隱密的對話聊天室。</p>
 				</div>
-				<div class="phone1" data-aos="fade-right"></div>
-				<div class="phone2" data-aos="fade-right"></div>
+				<div class="phone1"></div>
+				<div class="phone2"></div>
 			</div>
 		</div>
 		<div class="block2 dark-block">
 			<div class="block">
-				<div class="text" data-aos="fade-up">
+				<div class="text" data-aos="fade-up" data-aos-once="true">
 					<div class="icon"></div>
 					<p class="lg-title">密文保護</p>
 					<p class="lg-text">開啓密文保護後，對話內容將形成亂碼，絕對性地保護用戶聊天紀錄，可避免他人窺探訊息內容。若要恢復成明文模式，則需要登入密碼進行身分驗證，才能關閉該保護機制。</p>
 				</div>
-				<div class="phone1" data-aos="fade-left"></div>
+				<div class="phone1" data-aos="fade-left" data-aos-once="true"></div>
 			</div>
 			<div class="block-mobile">
-				<div class="text" data-aos="fade-up">
+				<div class="text">
 					<div class="icon"></div>
 					<p class="xl-title">密文保護</p>
 					<p class="md-title">開啓密文保護後，對話內容將形成亂碼，絕對性地保護用戶聊天紀錄，可避免他人窺探訊息內容。若要恢復成明文模式，則需要登入密碼進行身分驗證，才能關閉該保護機制。</p>
 				</div>
-				<div class="phone3" data-aos="fade-right"></div>
+				<div class="phone3"></div>
 			</div>
 		</div>
 		<div class="block3 light-block">
 			<div class="block">
-				<div class="phone1" data-aos="fade-right"></div>
-				<div class="text" data-aos="fade-up">
+				<div class="phone1" data-aos="fade-right" data-aos-once="true"></div>
+				<div class="text" data-aos="fade-up" data-aos-once="true">
 					<div class="icon"></div>
 					<p class="lg-title">螢幕防截圖</p>
 					<p class="lg-text">開於帳戶設定中開啟防截圖功能，即無須擔心機密對話因螢幕截圖而洩漏。若要關閉這項保護功能，則需透過身分驗證才能關閉，讓用戶能隨時隨地安心聊天。</p>
 				</div>
 			</div>
 			<div class="block-mobile">
-				<div class="text" data-aos="fade-up">
+				<div class="text">
 					<div class="icon"></div>
 					<p class="xl-title">螢幕防截圖</p>
 					<p class="md-title">開於帳戶設定中開啟防截圖功能，即無須擔心機密對話因螢幕截圖而洩漏。若要關閉這項保護功能，則需透過身分驗證才能關閉，讓用戶能隨時隨地安心聊天。</p>
 				</div>
-				<div class="phone3" data-aos="fade-right"></div>
+				<div class="phone3"></div>
 			</div>
 		</div>
 		<div class="block4 dark-block">
 			<div class="block">
-				<div class="text" data-aos="fade-up">
+				<div class="text" data-aos="fade-up" data-aos-once="true">
 					<div class="icon"></div>
 					<p class="lg-title">閃訊</p>
 					<p class="lg-text">保障用戶的通訊安全，用戶在傳出訊息後，收件方在已讀訊息後會自動銷毀，避免商業機密訊息被洩漏，讓通訊安全做到滴水不漏的保障，同時可以客製化自動銷毀的秒數，讓您擁有最舒適的用戶體驗。</p>
 				</div>
-				<div class="phone1" data-aos="fade-left"></div>
+				<div class="phone1" data-aos="fade-left" data-aos-once="true"></div>
 			</div>
 			<div class="block-mobile">
-				<div class="text" data-aos="fade-up">
+				<div class="text">
 					<div class="icon"></div>
 					<p class="xl-title">閃訊</p>
 					<p class="md-title">保障用戶的通訊安全，用戶在傳出訊息後，收件方在已讀訊息後會自動銷毀，避免商業機密訊息被洩漏，讓通訊安全做到滴水不漏的保障，同時可以客製化自動銷毀的秒數，讓您擁有最舒適的用戶體驗。</p>
 				</div>
-				<div class="phone3" data-aos="fade-right"></div>
+				<div class="phone3"></div>
 			</div>
 		</div>
 		<div class="block5 light-block">
 			<div class="block">
-				<div class="phone1" data-aos="fade-right"></div>
-				<div class="text" data-aos="fade-up">
+				<div class="phone1" data-aos="fade-right" data-aos-once="true"></div>
+				<div class="text" data-aos="fade-up" data-aos-once="true">
 					<div class="icon"></div>
 					<p class="lg-title">企業群組通訊錄</p>
 					<p class="lg-text">公司成員清單一目了然，也可以一鍵匯入所有的成員名單，讓你不再低效率的辦公，立即上手工作環境。新成員也能馬上熟悉公司內部成員，讓你以一匹黑馬的資質，挑戰全新的任務。</p>
 				</div>
 			</div>
 			<div class="block-mobile">
-				<div class="text" data-aos="fade-up">
+				<div class="text">
 					<div class="icon"></div>
 					<p class="xl-title">企業群組通訊錄</p>
 					<p class="md-title">公司成員清單一目了然，也可以一鍵匯入所有的成員名單，讓你不再低效率的辦公，立即上手工作環境。新成員也能馬上熟悉公司內部成員，讓你以一匹黑馬的資質，挑戰全新的任務。</p>
 				</div>
-				<div class="phone3" data-aos="fade-right"></div>
+				<div class="phone3"></div>
 			</div>
 		</div>
 	</div>
@@ -309,14 +313,21 @@
 			</p>
 		</div>
 	</div>
+
+	<!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom JavaScript for this theme -->
+    <script src="js/scrolling-nav.js"></script>
 	<!-- AOS-->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
 		AOS.init();
 	</script>
-	<!-- other script -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
 	
 </body>
 </html>

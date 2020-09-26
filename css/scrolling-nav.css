@@ -2,13 +2,8 @@
 	height: 80px;
 	width: 100%;
 }
-@media (min-width:1900px){
-	#mainNav{
-		height: 160px;
-	}
-}
 .navtop{
-	background-color: rgba(0,0,0,0);
+	background-color:rgba(0, 0, 0, 0);
 	-moz-transition: background-color 0.4s ease;
     -ms-transition: background-color 0.4s ease;
     -o-transition: background-color 0.4s ease;
@@ -16,7 +11,7 @@
     transition: background-color 0.4s ease;
 }
 .navscrolled{
-	background-color: black;
+	background-color: #022142;
     -moz-transition: background-color 0.4s ease;
     -ms-transition: background-color 0.4s ease;
     -o-transition: background-color 0.4s ease;
@@ -30,9 +25,10 @@
 }
 
 .nav-link-btn {
-	color: #333333 !important;
-	background-color: #F0B90B ;
-	border-radius: 4px;
+	color: white !important;
+	padding: .5rem 1rem !important;
+	border: 0.6px solid rgb(256, 256, 256, 0.5);
+	border-radius: 3px;
 }
 
 .navbar-brand{
@@ -46,18 +42,20 @@
 }
 nav > .container{
 	width: 100%;
-	padding: 0px 5%;
+	padding-left: 5%;
+	padding-right: 2%;
 	max-width: 5000px;
 	
 }
 /*hamburger color*/
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
-	background-color: #FFFFFF;
+	/* background-color: #FFFFFF; */
+    background-color: #c9ac82;
 }
 .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner::before, .hamburger.is-active .hamburger-inner::after{
 	background-color: #FFFFFF;
 }
-@media (max-width: 992px){
+@media (max-width: 768px){
 	.nav_logo{
 		height: 18px;
 	}
@@ -66,8 +64,8 @@ nav > .container{
 		margin-left: 0px !important;
 		width: 100%;
 		position: fixed;
-		top: 79px;
-		background-color: rgb(0,0,0);
+		top: 70px;
+		background-color: #022142;
 		padding: 5% 5%;
 		
 		opacity: 1;

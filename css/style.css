@@ -22,9 +22,6 @@ html, body{
 .nav-logo{
 	height: 3rem;
 }
-.navbar{
-	background-color: transparent;
-}
 
 #Title .carousel-item{
 	background-size: cover;
@@ -65,10 +62,10 @@ html, body{
 }
 #Title .dl-btns .dl-btn{
 	width: 9em;
-	background-color: black;
-	color: whitesmoke;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	border: 0.6px solid rgb(256, 256, 256, 0.5);
 	padding: 0rem 0.75rem;
-	opacity:60%;
 }
 #Title .dl-btns .lg-text{
 	float: left;
