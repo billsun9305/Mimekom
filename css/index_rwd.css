@@ -12,6 +12,11 @@
         display: inline;
     }
 
+    #Return-top .lg-text{
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
+
     #Information{
         height: 116vw;
     }
@@ -105,6 +110,10 @@
         position: relative;
         float: right;
         height: 2rem;
+    }
+
+    #Return-top{
+        display: none;
     }
 
     #Information{

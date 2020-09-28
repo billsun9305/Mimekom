@@ -89,6 +89,36 @@ html, body{
 	color: white;
 }
 
+#Return-top{
+	position: fixed;
+	top: 60vh;
+	right: 0vw;
+	height: 16vw;
+	width: 4vw;
+	text-align: center;
+}
+#Return-top .upper-part{
+	background-color: #022142;
+	color: white;
+	height: 12vw;
+	padding: 1vw;
+	text-decoration: none;
+	display: block;
+}
+#Return-top .lower-part{
+	background-color: #c9ac82;
+	position: relative;
+	height: 4vw;
+	width: 4vw;
+	padding: 0.4vw;
+	display: block;
+	text-align: center;
+}
+#Return-top .lower-part .img-arrow{
+	height: 70%;
+	width: 70%;
+}
+
 #Information{
 	background-image: url("../img/homepage/bg1.png");
 	background-size: cover;
