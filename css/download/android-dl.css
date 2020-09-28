@@ -3,7 +3,7 @@
 }
 
 #Content{
-	background-image: url("/img/homepage/bg1.png");
+	background-image: url("../../img/homepage/bg1.png");
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
