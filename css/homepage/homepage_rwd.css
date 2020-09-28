@@ -43,35 +43,10 @@
     #Feature .block5 .block .text{
         top: -35vw;
     }
-
-    #Footer {
-        height: 22vw;
-    }
 }
 
 @media all and (max-width:767px){
     /* for mobile */
-    .nav-logo{
-        height: 5rem;
-    }
-    .lg-text{
-        line-height: 2.5rem;
-    }
-    #mainNav{
-        height: 13vw;
-        background-color:#022142;
-    }
-    #mainNav .navbar-nav{
-        top: 13vw;
-    }
-    #mainNav .nav-item .md-text{
-        font-size: 2.3rem;
-        line-height: 3.8rem;
-    }
-    #mainNav .nav-link-btn {
-        color: #022142 !important;
-        background-color: white;
-    }
     #Title{
         height: 63vw;
         text-align: center;
@@ -190,10 +165,10 @@
         display: block;
     }
     #Feature .light-block{
-        height: 140vw;
+        height: 145vw;
     }
     #Feature .dark-block{
-        height: 140vw;
+        height: 145vw;
     }
     #Feature .md-title{
         margin-top: 3vw;
@@ -202,8 +177,8 @@
     #Feature .icon{
         margin-top: 5vw;
         margin-bottom: 2vw;
-        width: 12vw;
-        height: 12vw;
+        width: 15vw !important;
+        height: 15vw !important;
         display: inline-block;
     }
     #Feature .block-mobile .text{
@@ -215,17 +190,17 @@
         color: white;
     }
     #Feature .block-mobile .phone1{
-        background-image: url("../img/homepage/phone2.png");
+        background-image: url("/img/homepage/phone2.png");
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: 30vw;
+        margin-top: 33vw;
         margin-left: 10vw;
         width: 40vw;
         height: 65vw;
         display: inline-block;
     }
     #Feature .block-mobile .phone2{
-        background-image: url("../img/homepage/phone2.png");
+        background-image: url("/img/homepage/phone2.png");
         background-size: contain;
         background-repeat: no-repeat;
         width: 40vw;
@@ -233,10 +208,10 @@
         display: inline-block;
     }
     #Feature .block-mobile .phone3{
-        background-image: url("../img/homepage/phone2.png");
+        background-image: url("/img/homepage/phone2.png");
         background-size: contain;
         background-repeat: no-repeat;
-        margin-top: 30vw;
+        margin-top: 33vw;
         margin-left: 50vw;
         width: 40vw;
         height: 65vw;
@@ -244,7 +219,7 @@
     }
 
     #Contact-us .block-mobile{
-        background-image: url("../img/homepage/contact_us_bg.png");
+        background-image: url("/img/homepage/contact_us_bg.png");
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -280,47 +255,8 @@
     #Contact-us .btn2{
         background-color: #324583;
     }
-
-    #Footer{
-        height: 40vw;
-        padding-top: 10vw;
-    }
-    #Footer .mobile{
-        margin-top: 5vw;
-        display: block;
-    }
-    #Footer .md-text{
-        display: none;
-    }
-    #Footer .contact-btns{
-        display: none;
-    }
-    #Footer .right-stuff{
-        position: relative;
-        top: 0vw;
-        margin-right: 0vw;
-        text-align: center;
-        opacity: 80%;
-    }
-    #Footer .icon1{
-        width: 8vw;
-        height: 8vw;
-        margin-right: 5vw;
-        display: inline-block;
-    }
-    #Footer .icon2{
-        width: 8vw;
-        height: 8vw;
-        display: inline-block;
-    }
 }
 @media all and (max-width:539px){
-    #mainNav{
-        height: 18vw;
-    }
-    #mainNav .navbar-nav{
-        top: 18vw;
-    }
     #Title {
         height: 68vw;
     }
@@ -359,6 +295,6 @@
     #Contact-us .sm-title{
         font-size: 1.8rem;
     }
-  }
+}
 /* @media all and (min-width:1501px){
 } */
