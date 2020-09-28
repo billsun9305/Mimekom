@@ -44,7 +44,7 @@
 }
 #Title .dl-btns .lg-text{
 	float: left;
-	font-family: "Roboto-light";
+	font-weight: lighter;
 	padding-right: 1rem;
 }
 #Title .dl-btns img{
@@ -74,7 +74,7 @@
 	z-index: 50;
 }
 #Return-top .upper-part{
-	background-color: #022142;
+	background-color: #021142;
 	color: white;
 	height: 12vw;
 	padding: 1vw;
@@ -141,9 +141,6 @@
 	color: #c9ac82;
 }
 #Information .line{
-	/* position: absolute;
-	left: 0px; */
-	/* float: left; */
 	width: 10vw;
 	height: 1px;
 	border-top: solid white 1px;

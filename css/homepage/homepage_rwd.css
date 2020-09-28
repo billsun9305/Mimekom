@@ -172,7 +172,7 @@
     }
     #Feature .md-title{
         margin-top: 3vw;
-        font-family: 'Roboto-light';
+        font-weight: lighter;
     }
     #Feature .icon{
         margin-top: 5vw;
@@ -243,7 +243,7 @@
         width: 60vw;
         height: 10vw;
         border-radius: 3.5vw;
-        font-family: 'Roboto-light';
+        font-weight: lighter;
         color: whitesmoke;
         display: block;
     }
