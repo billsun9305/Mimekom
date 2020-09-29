@@ -73,6 +73,9 @@
 	text-align: center;
 	z-index: 50;
 }
+.at-top{
+	display: none;
+}
 #Return-top .upper-part{
 	background-color: #021142;
 	color: white;
