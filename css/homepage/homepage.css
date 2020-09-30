@@ -36,7 +36,7 @@
 	display: inline;
 }
 #Title .dl-btns .dl-btn{
-	width: 9em;
+	width: 10em;
 	background-color: rgba(0, 0, 0, 0.6);
 	color: white;
 	border: 0.6px solid rgb(256, 256, 256, 0.5);
@@ -44,8 +44,9 @@
 }
 #Title .dl-btns .lg-text{
 	float: left;
-	font-weight: lighter;
+	font-weight: 400;
 	padding-right: 1rem;
+	letter-spacing: 1px;
 }
 #Title .dl-btns img{
 	position: relative;
@@ -60,7 +61,7 @@
 #Title .lg-text{
 	padding-top: 0.4rem;
 	padding-bottom: 0.4rem;
-	opacity: 70%;
+	opacity: 90;
 	color: white;
 }
 
@@ -115,7 +116,7 @@
 	width: 88%;
 	margin-left: 6%;
 	margin-right: 6%;
-	height: 50vw;
+	height: 40vw;
 }
 #Information .about-mimekom .content-mobile{
 	display: none;
@@ -128,7 +129,7 @@
 	top: 6vw;
 	left: 14vw;
 	width: 22vw;
-	height: 46vw;
+	height: 36vw;
 }
 #Information .about-text{
 	position: absolute;
