@@ -86,6 +86,21 @@
         float: right;
         height: 2rem;
     }
+    #Title .bg1{
+        background-image: url("../../img/homepage/mobile01.png");
+    }
+    #Title .bg2{
+        background-image: url("../../img/homepage/mobile02.png");
+    }
+    #Title .bg3{
+        background-image: url("../../img/homepage/mobile03.png");
+    }
+    #Title .bg4{
+        background-image: url("../../img/homepage/mobile04.png");
+    }
+    #Title .bg5{
+        background-image: url("../../img/homepage/mobile05.png");
+    }
 
     #Return-top{
         display: none;
