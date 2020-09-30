@@ -44,7 +44,7 @@
 }
 #Title .dl-btns .lg-text{
 	float: left;
-	font-weight: 400;
+	font-weight: lighter;
 	padding-right: 1rem;
 	letter-spacing: 1px;
 }
@@ -61,7 +61,7 @@
 #Title .lg-text{
 	padding-top: 0.4rem;
 	padding-bottom: 0.4rem;
-	opacity: 90;
+	opacity: 90%;
 	color: white;
 }
 
@@ -73,6 +73,7 @@
 	width: 4vw;
 	text-align: center;
 	z-index: 50;
+	letter-spacing: 0;
 }
 .at-top{
 	display: none;
