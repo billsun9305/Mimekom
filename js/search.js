@@ -83,16 +83,14 @@ function newLi(s) {
 
 function removeElement(elementId) {
     // Removes an element from the document
-    var element = document.getElementById(elementId);
-    element.parentNode.removeChild(element);
+    var element = document.getElementById(elementId)
+    element.parentNode.removeChild(element)
 }
 
 function loadPage() {
     var ul = getUl()
 
-    for (var i = 0; i < nowList.length; i++) {
-        removeElement(nowList[i].Title)
-    }
+    ul.innerHTML = ''
 
     var keyData = []
 
@@ -108,11 +106,11 @@ function loadPage() {
     for (var i = (nowPage - 1) * showBlock; i < (nowPage) * showBlock && i < keyData.length; i++) {
         nowList.push(keyData[i])
         var line = document.createElement("div")
-        line.setAttribute("class", "top-line")
+        line.setAttribute("class", "top-line line")
         ul.appendChild(line)
         ul.appendChild(newLi(keyData[i]))
         var line = document.createElement("div")
-        line.setAttribute("class", "bot-line")
+        line.setAttribute("class", "bot-line line")
         ul.appendChild(line)
     }
 
