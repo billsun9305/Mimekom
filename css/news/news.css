@@ -22,16 +22,30 @@
   color: white;
 }
 #Main #search {
+  background-image: url("../../img/news/search.png");
+  background-size: 2rem;
+  background-position: 95% 50%;
+  background-repeat: no-repeat;
   background-color: transparent;
-  margin: 2vw;
+  margin: 2vw 0;
+  padding: 5px 2rem;
   width: 20vw;
   height: 3vw;
   color: white;
   font: 1.3vw "Roboto";
-  padding: 5px 2rem;
   border-style: solid;
   border-color: white;
   border-radius: 1.5vw;
+}
+#Main #search:focus {
+  background-image: none;
+}
+#Main #last-update {
+  float: right;
+  margin: 3vw 0;
+}
+#Main ul {
+  padding-inline-start: 0;
 }
 #Main .line {
   border: #e4e4e4 1px;
@@ -47,6 +61,30 @@
 #Main .block {
   background-color: rgba(256, 256, 256, 0.1);
   padding: 1vw 2vw;
+  display: grid;
+  text-decoration: none;
+  color: white;
+  grid-template-columns: auto 1fr;
+}
+#Main .block p {
+  margin-bottom: 0;
+}
+#Main .thumbnail {
+  background-image: url("../../img/news/default_img.png");
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 18vw;
+}
+#Main .texts {
+  margin-left: 2vw;
+}
+#Main .block-title {
+  font-weight: bold;
+}
+#Main .block-date {
+  color: #c9ac82;
+  margin-bottom: 0.5vw !important;
 }
 #Main #Change-page {
   text-align: center;
