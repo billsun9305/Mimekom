@@ -61,11 +61,11 @@ function loadPage() {
     ul.innerHTML = ''
 
     var keyData = []
-
+    console.log("now searching " + keyword)
     for (var i = 0; i < data.length; i++) {
         if (data[i].Title.includes(keyword) || data[i].Tags.includes(keyword)) {
             keyData.push(data[i])
-            console.log("now searching " + keyword + " now parsing data " + data[i].Title)
+            console.log("find" + data[i].Title)
         }
     }
 
