@@ -70,11 +70,13 @@
   margin-bottom: 0;
 }
 #Main .thumbnail {
-  background-image: url("../../img/news/default_img.png");
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   width: 18vw;
+}
+#Main .thumbnail.default {
+  background-image: url("../../img/news/default_img.png");
 }
 #Main .texts {
   margin-left: 2vw;

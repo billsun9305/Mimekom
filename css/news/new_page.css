@@ -51,8 +51,7 @@
   padding: 0.5vw 0;
   border: #c9ac82 1px solid;
 }
-#Main .img1 {
-  background-image: url("../../img/news/test_img.jpeg");
+#Main .img {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;

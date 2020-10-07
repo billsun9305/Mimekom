@@ -18,6 +18,29 @@ function getUl() {
     return document.getElementById("myUl")
 }
 
+function contentPreprocess(s) {
+    if (s.Content.includes('<img>')) {
+        var str = ""
+        var text_arr = s.Content.split('<img>')
+        for (var i = 0; i < text_arr.length; i++) {
+            str = str.concat(text_arr[i])
+        }
+        return str
+    }
+    else {
+        return s.Content
+    }
+}
+
+function addCustomThumb(id) {
+    var body = document.getElementById('custom-thumb')
+    var css = document.createElement("style")
+    css.innerHTML = "#Main .thumbnail.custom-thumb {\
+        background-image: url('img/news/" + id + "/thumb.jpeg');\
+    }"
+    body.appendChild(css)
+}
+
 function newLi(s) {
     var node = document.createElement("a")
     node.setAttribute("id", s.Title)
@@ -25,7 +48,13 @@ function newLi(s) {
     node.setAttribute("href", "new_page.html?" + s.Id)
 
     var thumbnail = document.createElement("div")
-    thumbnail.setAttribute("class", "thumbnail")
+    if (s.Thumbnail) {
+        thumbnail.setAttribute("class", "thumbnail default")
+    }
+    else {
+        thumbnail.setAttribute("class", "thumbnail custom-thumb")
+        addCustomThumb(s.Id)
+    }
     node.appendChild(thumbnail)
 
     var texts = document.createElement("div")
@@ -44,7 +73,7 @@ function newLi(s) {
 
     var content = document.createElement("p")
     content.setAttribute("class", "md-text")
-    content.innerHTML = s.Content.substring(0, 150) + '...'
+    content.innerHTML = contentPreprocess(s).substring(0, 150) + '...'
     texts.appendChild(content)
     return node
 }
@@ -57,7 +86,8 @@ function removeElement(elementId) {
 
 function loadPage() {
     var ul = getUl()
-
+    var body = document.getElementById('custom-thumb')
+    body.innerHTML = ''
     ul.innerHTML = ''
 
     var keyData = []
@@ -96,7 +126,7 @@ function loadPage() {
         var node = document.createElement("a")
         node.setAttribute("class", "page-btn")
         node.setAttribute("id", i)
-        // node.setAttribute("href", '')
+        node.setAttribute("href", '#Title')
         node.innerHTML = i
         // node.setAttribute("class", "page-btn")
         element.appendChild(node)
