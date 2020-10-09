@@ -33,7 +33,7 @@
   height: 3vw;
   color: white;
   font: 1.3vw "Roboto";
-  border-style: solid;
+  border: solid 1px;
   border-color: white;
   border-radius: 1.5vw;
 }
@@ -63,6 +63,7 @@
   padding: 1vw 2vw;
   display: grid;
   text-decoration: none;
+  text-align: left;
   color: white;
   grid-template-columns: auto 1fr;
 }
@@ -81,8 +82,17 @@
 #Main .texts {
   margin-left: 2vw;
 }
+#Main .md-text {
+  font-weight: lighter;
+}
+#Main .demo-text-m {
+  display: none;
+}
 #Main .block-title {
   font-weight: bold;
+}
+#Main .block-title-m {
+  display: none;
 }
 #Main .block-date {
   color: #c9ac82;
@@ -98,6 +108,7 @@
   height: 2.5vw;
   color: white;
   font: 1vw "Roboto";
+  font-weight: lighter;
   letter-spacing: 1px;
   line-height: 2.5vw;
   border: white 1px;

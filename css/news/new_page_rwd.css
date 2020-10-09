@@ -9,9 +9,37 @@
 
 @media all and (max-width: 767px) {
   /* for mobile */
+  .lg-title {
+    font-size: 3.2rem;
+  }
+  #Title .sm-title {
+    font-size: 1.7rem;
+  }
+  #Main .md-title {
+    font-size: 2.5rem;
+  }
+  #Main .xl-text {
+    font-size: 2rem;
+  }
+  #Main .lg-text {
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    line-height: 3.5rem;
+  }
   #Title {
-    height: 30vw;
+    height: 40vw;
     margin-top: 13vw;
+    padding-top: 15vw;
+  }
+  #Main .img {
+    background-size: cover;
+    width: 100%;
+    height: 50vw;
+    margin: 3vw 0;
+  }
+  #Main .return .xl-text {
+    margin: 6vw 18vw;
   }
 }
 @media all and (max-width: 539px) {
@@ -20,4 +48,4 @@
   }
 }
 /* @media all and (min-width:1501px){
-  } */
+} */

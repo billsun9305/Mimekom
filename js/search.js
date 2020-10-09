@@ -65,6 +65,15 @@ function newLi(s) {
     title.setAttribute("class", "md-title block-title")
     title.innerHTML = s.Title
     texts.appendChild(title)
+    // mobile-version title demo
+    var m_title = document.createElement("p")
+    m_title.setAttribute("class", "md-title block-title-m")
+    if (s.Title.length > 16) {
+        m_title.innerHTML = s.Title.substring(0, 15) + '...'
+    } else {
+        m_title.innerHTML = s.Title
+    }
+    texts.appendChild(m_title)
 
     var date = document.createElement("p")
     date.setAttribute("class", "lg-text block-date")
@@ -72,9 +81,14 @@ function newLi(s) {
     texts.appendChild(date)
 
     var content = document.createElement("p")
-    content.setAttribute("class", "md-text")
-    content.innerHTML = contentPreprocess(s).substring(0, 150) + '...'
+    content.setAttribute("class", "md-text demo-text")
+    content.innerHTML = contentPreprocess(s).substring(0, 120) + '...'
     texts.appendChild(content)
+    // mobile-version content demo
+    var m_content = document.createElement("p")
+    m_content.setAttribute("class", "md-text demo-text-m")
+    m_content.innerHTML = contentPreprocess(s).substring(0, 70) + '...'
+    texts.appendChild(m_content)
     return node
 }
 

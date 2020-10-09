@@ -78,6 +78,13 @@ nav > .container {
 .hamburger.is-active .hamburger-inner::after {
   background-color: #ffffff;
 }
+@media (max-width: 900px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .nav_logo {
     height: 18px;

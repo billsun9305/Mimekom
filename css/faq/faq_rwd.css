@@ -10,8 +10,9 @@
 @media all and (max-width: 767px) {
   /* for mobile */
   #Title {
-    height: 30vw;
+    height: 40vw;
     margin-top: 13vw;
+    padding-top: 15vw;
   }
 
   #Main .faq {
