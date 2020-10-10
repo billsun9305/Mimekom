@@ -28,6 +28,7 @@
   padding-left: 7vw;
   float: left;
   text-align: left;
+  max-width: 100%;
 }
 #Title .dl-btns {
   position: absolute;
