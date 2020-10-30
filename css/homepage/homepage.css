@@ -1,8 +1,13 @@
 #Title .carousel-item {
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  /* width: 100%; */
   padding-bottom: 10vw;
+}
+.carousel-caption {
+  width:100%;
+  height:100%;
+  left:0 !important;
 }
 #Title .bg1 {
   background-image: url("../../img/homepage/title_bg_01.png");
@@ -55,6 +60,7 @@
   float: right;
   height: 1.3em;
 }
+
 #Title .lg-title {
   font-weight: bold;
   color: white;

@@ -111,13 +111,17 @@ window.addEventListener("scroll", function(event) {
         var top = this.scrollY,
             left =this.scrollX;
         if (hamburger_clicked==0 && top<=0) {//需要dropdown是關閉的
-            $('#mainNav').addClass("navtop");
-            $('#mainNav').removeClass("navscrolled");
+            $('#mainNav').switchClass( "navscrolled", "navtop", 500, "easeInOutQuad" );
+
+            // $('#mainNav').addClass('navtop',5000);
+            // $('#mainNav').removeClass('navscrolled',5000);
             $('#to_top_icon').hide();
         }
         else{
-            $('#mainNav').removeClass("navtop");
-            $('#mainNav').addClass("navscrolled");
+            $( '#mainNav' ).switchClass( "navtop", "navscrolled", 200, "easeInOutQuad" );
+
+            // $('#mainNav').removeClass('navtop',5000);
+            // $('#mainNav').addClass('navscrolled',5000);
             $('#to_top_icon').show();
         }
 
